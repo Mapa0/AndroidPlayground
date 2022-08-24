@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
+            android:text="a@ifms.com"
             android:textColorHint="#616161"
             tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -42,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Senha"
+            android:text="aaaa"
             android:textColorHint="#616161"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>

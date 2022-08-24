@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="341dp"
+        android:layout_height="64dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        android:ems="10"
+        android:hapticFeedbackEnabled="false"
+        android:hint="Digite um número"
+        android:inputType="numberSigned|numberDecimal"
+        android:paddingLeft="15dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="341dp"
+        android:layout_height="64dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        android:ems="10"
+        android:hint="Digite um número"
+        android:inputType="numberSigned|numberDecimal"
+        android:paddingLeft="15dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:text="/"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <Button
+        android:id="@+id/multiplicationButton"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:text="X"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:text="-"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <Button
+        android:id="@+id/sumButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:text="+"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="648dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

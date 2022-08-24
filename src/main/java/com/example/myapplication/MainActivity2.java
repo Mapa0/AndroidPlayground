@@ -34,8 +34,9 @@ public class MainActivity2 extends AppCompatActivity {
         arrayListItens.add("CheckBox");
         arrayListItens.add("RadioButton");
         arrayListItens.add("Janela de Diálogo");
-        arrayListItens.add("Item 4");
-        arrayListItens.add("Item 5");
+        arrayListItens.add("Buttons");
+        arrayListItens.add("Spinner");
+        arrayListItens.add("Calculator");
 
         arrayListItensCopia = new ArrayList<>(arrayListItens);
 
@@ -52,11 +53,46 @@ public class MainActivity2 extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //i é o índice do item na AdapterView.
+                //position é o índice do item na AdapterView.
                 if (position ==0){
                     Intent intent = new Intent(
                             MainActivity2.this,
-                            MainActivity.class
+                            CheckBoxActivity.class
+                    );
+                    startActivity(intent);
+                }
+                if (position ==1){
+                    Intent intent = new Intent(
+                            MainActivity2.this,
+                            RadioActivity.class
+                    );
+                    startActivity(intent);
+                }
+                if (position ==2){
+                    Intent intent = new Intent(
+                            MainActivity2.this,
+                            DialogActivity.class
+                    );
+                    startActivity(intent);
+                }
+                if (position ==3){
+                    Intent intent = new Intent(
+                            MainActivity2.this,
+                            MainActivityButtons.class
+                    );
+                    startActivity(intent);
+                }
+                if (position ==4){
+                    Intent intent = new Intent(
+                            MainActivity2.this,
+                            MainActivityButtons.class
+                    );
+                    startActivity(intent);
+                }
+                if (position ==5){
+                    Intent intent = new Intent(
+                            MainActivity2.this,
+                            CalculatorActivity.class
                     );
                     startActivity(intent);
                 }
